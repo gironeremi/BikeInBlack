@@ -1,0 +1,95 @@
+<!doctype HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bike In Black</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="leaflet/leaflet.css" />
+		<script src="leaflet/leaflet.js"></script>
+		<script src="https://kit.fontawesome.com/da852d3de8.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="back-to-top"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
+		<header id="top">
+			<div id="logo">
+				<h1>BIKE IN BLACK</h1>
+				<h2>location de vélos BiB™ dans la ville de Nantes</h2>
+			</div>
+			<div id="menu-slogan">
+				<nav>
+					<ul>
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#slider">Aide</a></li>
+						<li><a href="#myMap">Réserver</a></li>
+						<li><a href="#bottom">Contact</a></li>
+					</ul>
+				</nav>
+				<h2 id="slogan">Marre des 4 x 4 dans le 44? <br />Roulez en bike... in Black!</h2>
+			</div>
+		</header>
+		<!--  Section Diaporama  -->
+		<section id="slider">
+			<div id="left-arrow" class="arrows"><i class="fas fa-chevron-left"></i>
+			</div>
+			<div id="slider-text-playpause">
+				<img id="slider-picture" src="media/slide1.png" alt="trouver un vélo sur la carte"/>
+				<div id="slider-text"></div>
+				<div><i id="pause" class="fas fa-pause"></i> <i id="play" class="fas fa-play"></i></div>
+			</div>
+			<div id="right-arrow" class="arrows"><i class="fas fa-chevron-right"></i></div>
+		</section>
+		<!--  Section Principale: Carte + Bloc de Réservation  -->
+		<section id="map-sidePanel">
+			<div id="myMap"></div>
+			<div id="sidePanel">
+				<h3>Détails de la Station</h3>
+				<div id="stationInfo"></div>
+				<div id="form">
+					<p><label>votre Nom: </label><br /><input id="nom" type="text"></p>
+					<p><label>votre Prénom: </label><br /><input id="prenom" type="text"></p>
+					<p id="check"></p>
+					<input id="reservation" type="button" value="Réserver">
+				</div>
+				<div id="canvas">
+					<h3>Signez ici</h3>
+					<p id="canvas-check"></p>
+					<p><canvas id="myCanvas" width="265px" height="265px"></canvas></p>
+					<input id="validation" type="button" value="Valider">
+				</div>
+			</div>
+		</section>
+		<!--  Section Affichage de la Réservation + Timer  -->
+		<section id="reservation-valide">
+			<div id="validation-text"></div>
+			<p id="display"></p>
+		</section>
+		<!--  Mentions Légales-->
+		<footer id="bottom">
+			<div id="credits">
+				<p><strong>Projet n°3 OpenClassrooms :</strong> Concevez une carte interactive de location de vélos.</p>
+				<p>Site web réalisé par <em>GIRONE Rémi</em>. Bike In Black™ est une société fictive de location de vélos nantaise.</p>
+			</div>
+			<div id="velo">
+				<i class="fas fa-bicycle"></i>
+			</div>
+			<div id="social-links">
+				<h3>Retrouvez-nous sur les réseaux sociaux</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://fr.linkedin.com/in/remigirone?trk=profile-badge-cta"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Tous les "liens" vers les classes. Toujours mettre le main.js en dernière position-->
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/reservation.js"></script>
+		<script type="text/javascript" src="js/mapmanager.js"></script>
+		<script type="text/javascript" src="js/canvas.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

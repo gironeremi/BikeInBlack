@@ -1,0 +1,375 @@
+body
+{
+	background-color: #E8EAEE;
+	font-family: "Lato", serif;
+	margin: 0;
+}
+/*
+****************************************************
+****************************************************
+HEADER
+****************************************************
+****************************************************
+*/
+header
+{
+	font-family: "Cinzel", serif;
+	background-color: black;
+	color: white;
+	background-image: url("../media/bib_hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	left: 0;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-around;
+}
+nav ul li
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+nav a
+{
+text-decoration: none;
+border-top: 3px solid rgba(0,0,0,0);
+color: currentColor;
+}
+nav a:hover
+{
+	border-top: 3px solid #768695;
+}
+
+/*
+***************************
+TITRES ET SOUS-TITRES
+***************************
+*/
+h1
+{
+	font-size: 1.5em;
+}
+h1, h2
+{
+	text-shadow: 3px 0 3px grey;
+	margin: 0;
+	padding: 0;
+}
+h2, header h3, #back-to-top
+{
+	display: none;
+}
+h1, h2, h3
+{
+	font-family: "Cinzel", serif;
+	text-align: center;
+}
+/*
+****************************************************
+****************************************************
+SLIDER & COMMANDES
+****************************************************
+****************************************************
+*/
+#slider
+{
+	background-color: #768695;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-top: 70px;
+}
+#right-arrow
+{
+	text-align: right;
+}
+#slider-text-playpause
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#slider-picture
+{
+	width: 90%;
+	margin-top: 1em;
+	border: 1px solid black;
+}
+#slider-text
+{
+	font-size: 1.5em;
+	text-align: center;
+}
+#slider-text, #check, #canvas-check
+{
+	font-family: "Lato", serif;
+	font-size: 1.2em;
+	margin: 0.5em;
+	color: #CAA365;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000000;
+}
+.fas
+{
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+.fas.fa-pause
+{
+	display: block;
+}
+.fas.fa-play
+{
+	display: none;
+}
+/*
+****************************************************
+****************************************************
+SECTION PRINCIPALE
+****************************************************
+****************************************************
+*/
+#map-sidePanel
+{
+	padding-top: 3em;
+	padding-bottom: 3em;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#myMap, #sidePanel
+{
+	width: 90%;
+}
+#sidePanel div
+{
+	padding: 0.7em;
+}
+span, label
+{
+	font-weight: bold;
+}
+#reservation, #validation
+{
+	display: flex;
+	margin: auto;
+}
+#myMap, #sidePanel
+{
+	margin: 1em;
+	border: 2px solid black;
+}
+#myMap
+{
+	height: 75vh;
+}
+#sidePanel, #canvas, #reservation-valide
+{
+	display: none;
+}
+canvas
+{
+	margin: 0;
+	padding: 0;
+	background-color: #768695;
+}
+#myCanvas
+{
+	display: flex;
+	margin: auto;
+}
+/*
+**********************
+RESERVATION VALIDÉE
+**********************
+*/
+#reservation-valide, #display
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#reservation-valide
+{
+	border-radius: 0.5em;
+	width: 70%;
+	margin: auto;
+}
+#display
+{
+	font-family: "Cinzel", serif;
+	margin: 0.3em;
+	font-size: 2.5em;
+}
+/*
+****************************************************
+****************************************************
+FOOTER
+****************************************************
+****************************************************
+*/
+footer
+{
+	margin: 0;
+	margin-top: 3em;
+	padding: 2em;
+	color: white;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+strong
+{
+	color: #768695;
+}
+em
+{
+	color: #CAA365;
+}
+#velo
+{
+	display: flex;
+	margin: auto;
+}
+.fa-bicycle
+{
+	color: #CAA365;
+	font-size: 3em;
+	margin: 1em;
+}
+#social-links i
+{
+	font-size: 2em;
+	color: #768695;
+}
+#social-links ul
+	{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+#social-links a, #social-links a:hover
+	{
+		text-decoration: none;
+		border-top: 0;
+	}
+/*
+*******************************************************************
+
+
+*** RESPONSIVE
+
+
+*******************************************************************
+*/
+@media all and (min-width: 1024px)
+{
+	#back-to-top
+	{
+		display: block;
+		z-index: 5;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+	.fa-arrow-circle-up
+	{
+		font-size: 2.5em;
+		color: #CAA365;
+		text-shadow: 1px 1px 1px #a97e3a;
+	}
+	header *
+	{
+		padding: 0.6em;
+	}
+	header
+	{
+		height: 700px;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+	h1
+	{
+		font-size: 3em;
+	}
+	h2, header h2
+	{
+		display: block;
+	}
+	#logo
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	#menu-slogan
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#slogan
+	{
+		font-size: 1.8em;
+	}
+	ul
+	{
+		font-size: 1.3em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#slider
+	{
+		margin: 0;		
+		padding: 3em;
+	}
+	#map-sidePanel
+	{
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	#myMap, #SidePanel
+	{
+		width: 70%;
+	}
+	#sidePanel
+	{
+		flex: 1;
+	}
+	#validation-text
+	{
+		font-size: 1.3em;
+	}
+	footer
+	{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#credits, #social-links
+	{
+		flex: 1;
+	}
+}
